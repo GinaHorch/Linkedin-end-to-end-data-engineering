@@ -1,4 +1,5 @@
 dbt_transformation:
+  target: dev
   outputs:
     dev:
       dataset: "{{ env_var('DBT_BIGQUERY_DATASET', '') }}"
@@ -11,4 +12,4 @@ dbt_transformation:
       project: "{{ env_var('DBT_BIGQUERY_PROJECT', '') }}"
       threads: 1
       type: bigquery
-  target: dev
+  # target: dev

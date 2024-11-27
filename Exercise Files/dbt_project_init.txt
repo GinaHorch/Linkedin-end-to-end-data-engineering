@@ -1,0 +1,13 @@
+Initiate the dbt Project
+
+1. Create environment variables:
+	export DBT_BIGQUERY_PROJECT=big-star-collectibles-443000
+	export DBT_BIGQUERY_LOCATION=US
+	export DBT_BIGQUERY_DATASET=transformed_data
+	export DBT_BIGQUERY_KEYFILE_PATH=/Users/ginahorch/SheCodes/LinkedInLearning/Linkedin-end-to-end-data-engineering/big-star-collectibles-443000-489e41731a57.json
+        
+export DBT_PROFILES_DIR=/Users/ginahorch/SheCodes/LinkedInLearning/Linkedin-end-to-end-data-engineering/dbt_transformation/config
+
+2. Verify connection:
+	cd dbt_transformation
+	dbt debug
