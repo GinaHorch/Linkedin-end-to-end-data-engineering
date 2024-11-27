@@ -3,4 +3,5 @@ target/
 dbt_packages/
 logs/
 config/.user.yml
-../Exercise Files/
+/credentials/
+*.json
